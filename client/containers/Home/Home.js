@@ -2,7 +2,7 @@ import './Home.scss';
 import React, { PureComponent as Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { Row, Col, Button, Icon, Card } from 'antd';
+import { Row, Col, Button } from 'antd';
 import PropTypes from 'prop-types';
 import { withRouter } from 'react-router';
 import LogoSVG from '../../components/LogoSVG/index.js';
@@ -20,7 +20,7 @@ const HomeGuest = () => (
     </div>
     <div className="main-one">
       <div className="container">
-        <Row>
+        {/* <Row>
           <Col span={24}>
             <div className="home-header">
               <a href="#" className="item">
@@ -36,7 +36,7 @@ const HomeGuest = () => (
               </a>
             </div>
           </Col>
-        </Row>
+        </Row> */}
         <Row>
           <Col lg={9} xs={24}>
             <div className="home-des">
@@ -66,7 +66,7 @@ const HomeGuest = () => (
         </Row>
       </div>
     </div>
-    <div className="feat-part section-feature">
+    {/* <div className="feat-part section-feature">
       <div className="container home-section">
         <h3 className="title">为API开发者设计的管理平台</h3>
         <span className="desc">
@@ -316,7 +316,7 @@ const HomeGuest = () => (
           </Col>
         </Row>
       </div>
-    </div>
+    </div> */}
   </div>
 );
 HomeGuest.propTypes = {
@@ -357,7 +357,7 @@ class Home extends Component {
     return (
       <div className="home-main">
         <HomeGuest introList={this.props.introList} />
-        <div className="row-tip">
+        {/* <div className="row-tip">
           <div className="container">
             <div className="tip-title">
               <h3 className="title">准备好使用了吗？</h3>
@@ -378,7 +378,7 @@ class Home extends Component {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     );
   }

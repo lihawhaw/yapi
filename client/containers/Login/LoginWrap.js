@@ -35,7 +35,7 @@ export default class LoginWrap extends Component {
           <LoginForm />
         </TabPane>
         <TabPane tab={"注册"} key="2">
-          {canRegister ? <RegForm /> : <div style={{minHeight: 200}}>管理员已禁止注册，请联系管理员</div>}
+          {canRegister ? <RegForm /> : <div style={{minHeight: 200}}>管理员已禁止注册，如有问题请联系 <a href='mailto:api_yapi@163.com'>管理员</a></div>}
         </TabPane>
       </Tabs>
     );
